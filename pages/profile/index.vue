@@ -1,4 +1,8 @@
-<script setup></script>
+<script setup lang="ts">
+definePageMeta({
+  middleware: ["profile"],
+});
+</script>
 
 <template>
   <article class="grid">
