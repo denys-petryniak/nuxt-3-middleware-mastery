@@ -5,7 +5,7 @@
     <ul>
       <li>
         <nuxt-link to="/" class="contrast">
-          <strong>Vue Mastery's Nuxt 3 Middleware</strong>
+          <strong>Nuxt 3 Route Middleware Mastery</strong>
         </nuxt-link>
       </li>
     </ul>
