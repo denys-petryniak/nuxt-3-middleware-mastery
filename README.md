@@ -1,4 +1,4 @@
-# Nuxt 3 Middleware (Vue Mastery Course)
+# Nuxt 3 Middleware Mastery
 
 ## Setup
 
