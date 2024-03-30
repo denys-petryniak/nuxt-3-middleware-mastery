@@ -1,4 +1,19 @@
-<script setup></script>
+<script setup lang="ts">
+definePageMeta({
+  middleware: function (to, from) {
+    const currentUser = useCookie("current-user");
+    const isAuthenticated = useCookie("is-authenticated");
+
+    if (!isAuthenticated.value) {
+      return "/login";
+    }
+
+    if (to.params.username !== currentUser.value) {
+      return `/profile/${currentUser.value}`;
+    }
+  },
+});
+</script>
 
 <template>
   <article class="grid">
